@@ -30,7 +30,7 @@ $info = @(
 $info | Set-Content dados/info_maquina_windows.txt
 
 # Execução do benchmark
-.\code\benchmark.exe --extra --reps 30 --out dados/windows_resultados.csv
+.\code\benchmark.exe --reps 30 --out dados/windows_resultados.csv
 
 if ($LASTEXITCODE -ne 0) {
     throw "Falha no benchmark"

@@ -12,5 +12,5 @@ make -C code
   echo "compilador: $(gcc --version | head -1)"
   echo "governor: $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2>/dev/null || echo n/d)"
 } > dados/info_maquina_linux.txt
-./code/benchmark --extra --reps 30 --out dados/linux_resultados.csv
+./code/benchmark --reps 30 --out dados/linux_resultados.csv
 python3 experimentos/analyze.py dados/linux_resultados.csv --out experimentos
