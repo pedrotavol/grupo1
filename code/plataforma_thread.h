@@ -42,6 +42,7 @@ void pt_spin_unlock(pt_spinlock_t *s);
 void pt_spin_destroy(pt_spinlock_t *s);
 
 /* Retorna o tempo atual em nanossegundos */
+
 uint64_t pt_now_ns(void);
 
 #endif
