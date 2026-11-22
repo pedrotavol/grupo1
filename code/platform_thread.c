@@ -4,7 +4,7 @@
 #define _POSIX_C_SOURCE 200809L
 #endif
 
-#include "plataform_thread.h"
+#include "platform_thread.h"
 #include <stdint.h>
 
 #ifdef _WIN32
