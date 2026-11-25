@@ -1,0 +1,24 @@
+# Executáveis gerados pela compilação
+/code/benchmark
+/code/benchmark.exe
+/testes/teste_plataforma.exe
+
+# Intermediários do compilador (MSVC grava na raiz do repositório)
+*.o
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor e sistema operacional
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
