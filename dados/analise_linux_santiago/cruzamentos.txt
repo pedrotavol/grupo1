@@ -1,0 +1,21 @@
+=== CRUZAMENTOS ESTIMADOS ===
+linux: 1 threads -> cruzamento estimado ~ 80.71 µs (entre 1 µs e 100 µs)
+linux: 4 threads -> cruzamento estimado ~ 43.92 µs (entre 1 µs e 100 µs)
+linux: 8 threads -> cruzamento estimado ~ 2.72 µs (entre 1 µs e 100 µs)
+
+=== DETALHE POR CONFIGURAÇÃO ===
+linux:  1 thr, seção curta (0 µs) -> spin/mutex = 2.15 (spinlock)
+linux:  1 thr, seção media (1 µs) -> spin/mutex = 1.02 (spinlock)
+linux:  1 thr, seção longa (100 µs) -> spin/mutex = 1.00 (mutex)
+linux:  2 thr, seção curta (0 µs) -> spin/mutex = 2.65 (spinlock)
+linux:  2 thr, seção media (1 µs) -> spin/mutex = 2.18 (spinlock)
+linux:  2 thr, seção longa (100 µs) -> spin/mutex = 1.02 (spinlock)
+linux:  4 thr, seção curta (0 µs) -> spin/mutex = 1.76 (spinlock)
+linux:  4 thr, seção media (1 µs) -> spin/mutex = 2.00 (spinlock)
+linux:  4 thr, seção longa (100 µs) -> spin/mutex = 0.86 (mutex)
+linux:  8 thr, seção curta (0 µs) -> spin/mutex = 1.30 (spinlock)
+linux:  8 thr, seção media (1 µs) -> spin/mutex = 1.23 (spinlock)
+linux:  8 thr, seção longa (100 µs) -> spin/mutex = 0.48 (mutex)
+linux: 16 thr, seção curta (0 µs) -> spin/mutex = 0.69 (mutex)
+linux: 16 thr, seção media (1 µs) -> spin/mutex = 0.60 (mutex)
+linux: 16 thr, seção longa (100 µs) -> spin/mutex = 0.27 (mutex)

@@ -1,0 +1,6 @@
+data: 2026-11-25T18:41:00-03:00
+kernel: Linux 7.2.9-1-cachyos #1 SMP PREEMPT_DYNAMIC Sat, 03 Oct 2026 23:25:43 +0000
+cpu:  11th Gen Intel(R) Core(TM) i5-1145G7 @ 2.60GHz
+nucleos_logicos: 8
+compilador: gcc (GCC) 16.2.1 20260810
+governor: powersave

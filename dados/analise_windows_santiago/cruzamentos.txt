@@ -1,0 +1,19 @@
+=== CRUZAMENTOS ESTIMADOS ===
+windows: 16 threads -> cruzamento estimado ~ 6.47 µs (entre 1 µs e 100 µs)
+
+=== DETALHE POR CONFIGURAÇÃO ===
+windows:  1 thr, seção curta (0 µs) -> spin/mutex = 1.41 (spinlock)
+windows:  1 thr, seção media (1 µs) -> spin/mutex = 1.02 (spinlock)
+windows:  1 thr, seção longa (100 µs) -> spin/mutex = 1.00 (spinlock)
+windows:  2 thr, seção curta (0 µs) -> spin/mutex = 1.61 (spinlock)
+windows:  2 thr, seção media (1 µs) -> spin/mutex = 1.18 (spinlock)
+windows:  2 thr, seção longa (100 µs) -> spin/mutex = 1.01 (spinlock)
+windows:  4 thr, seção curta (0 µs) -> spin/mutex = 2.53 (spinlock)
+windows:  4 thr, seção media (1 µs) -> spin/mutex = 1.55 (spinlock)
+windows:  4 thr, seção longa (100 µs) -> spin/mutex = 1.01 (spinlock)
+windows:  8 thr, seção curta (0 µs) -> spin/mutex = 3.19 (spinlock)
+windows:  8 thr, seção media (1 µs) -> spin/mutex = 1.28 (spinlock)
+windows:  8 thr, seção longa (100 µs) -> spin/mutex = 1.00 (spinlock)
+windows: 16 thr, seção curta (0 µs) -> spin/mutex = 3.22 (spinlock)
+windows: 16 thr, seção media (1 µs) -> spin/mutex = 1.15 (spinlock)
+windows: 16 thr, seção longa (100 µs) -> spin/mutex = 0.82 (mutex)
