@@ -14,6 +14,11 @@
 
 #else
 
+  #if !defined(_POSIX_C_SOURCE) || (_POSIX_C_SOURCE + 0) < 200112L
+    #undef _POSIX_C_SOURCE
+    #define _POSIX_C_SOURCE 200809L
+  #endif
+
   #include <pthread.h>
 
   typedef struct { pthread_t t; }          pt_thread_t;
@@ -42,7 +47,6 @@ void pt_spin_unlock(pt_spinlock_t *s);
 void pt_spin_destroy(pt_spinlock_t *s);
 
 /* Retorna o tempo atual em nanossegundos */
-
 uint64_t pt_now_ns(void);
 
 #endif
