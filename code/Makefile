@@ -1,14 +1,22 @@
 # Linux / FreeBSD (gmake). No Windows use build.bat.
 CC      ?= gcc
-CFLAGS  ?= -O2 -Wall -Wextra -pthread
-SRC     := platform_thread.c
+CFLAGS  ?= -std=c99 -O2 -Wall -Wextra -pthread
+SRC      := platform_thread.c
+HDR      := platform_thread.h
+TEST_SRC := testes/test_platform.c
 
-all: benchmark
+all: benchmark test_platform
 
-benchmark: benchmark.c $(SRC) platform_thread.h
+benchmark: benchmark.c $(SRC) $(HDR)
 	$(CC) $(CFLAGS) benchmark.c $(SRC) -o benchmark
 
-clean:
-	rm -f benchmark
+test_platform: $(TEST_SRC) $(SRC) $(HDR)
+	$(CC) $(CFLAGS) -I. $(TEST_SRC) $(SRC) -o test_platform
 
-.PHONY: all clean
+test: test_platform
+	./test_platform
+
+clean:
+	rm -f benchmark test_platform
+
+.PHONY: all test_platform test clean
