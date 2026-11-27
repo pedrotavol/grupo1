@@ -3,3 +3,7 @@ venv/
 .venv/
 env/
 .env/
+
+code/benchmark
+code/benchmark.exe
+code/test_platform
