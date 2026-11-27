@@ -1,9 +1,22 @@
-# Ambientes virtuais Python
+# Binários gerados (Linux/FreeBSD e Windows)
+code/benchmark
+code/test_platform
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Ambientes virtuais e cache do Python
 venv/
 .venv/
 env/
 .env/
+__pycache__/
+*.pyc
 
-code/benchmark
-code/benchmark.exe
-code/test_platform
+# Editores e arquivos de sistema
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
