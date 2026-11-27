@@ -7,7 +7,6 @@ Projeto da disciplina **GBC045 – Sistemas Operacionais**, do curso de Bacharel
 O projeto implementa uma **camada de abstração de threads** (`platform_thread.h/.c`), que oferece uma API única para operações de concorrência, utilizando os recursos nativos de cada sistema operacional:
 
 - **Linux/FreeBSD:** biblioteca POSIX Threads (pthreads).
-    
 - **Windows:** API nativa Win32.
     
 
@@ -28,9 +27,7 @@ Cada configuração é executada **30 vezes**, com uma rodada inicial de aquecim
 ### Integrantes
 
 - Pedro Tavares Oliveira
-    
 - Santiago Vitor Santos do Carmo
-    
 - Simao Baptista Sunga
     
 
