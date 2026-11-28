@@ -28,7 +28,7 @@ Cada configuração é executada **30 vezes**, com uma rodada inicial de aquecim
 
 - Pedro Tavares Oliveira
 - Santiago Vitor Santos do Carmo
-- Simao Baptista Sunga
+- Simão Baptista Sunga
     
 
 ## 2. Estrutura do repositório
